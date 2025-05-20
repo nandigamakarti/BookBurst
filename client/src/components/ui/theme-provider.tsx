@@ -15,10 +15,7 @@ type ThemeProviderState = {
 
 const initialState: ThemeProviderState = {
   theme: "system",
-  setTheme: (theme: Theme) => {
-    // This is a placeholder function that will never be called
-    // The actual setTheme function will be provided by useState
-  },
+  setTheme: () => null,
 };
 
 export const ThemeProviderContext = createContext<ThemeProviderState>(initialState);

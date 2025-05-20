@@ -11,47 +11,6 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        gold: {
-          50: "#fff9c4", // Very light gold
-          100: "#fff59d", // Light gold
-          200: "#fff176", // Soft gold
-          300: "#ffee58", // Bright gold
-          400: "#ffca28", // Vibrant gold
-          500: "#ffc107", // Rich gold
-          600: "#ffb300", // Deep gold
-          700: "#ffa000", // Dark gold
-          800: "#ff8f00", // Orange gold
-          900: "#ff6f00", // Burnt gold
-        },
-        cream: {
-          50: "#fffde7", // Very light cream
-          100: "#fff8e1", // Light cream
-          200: "#fff3bf", // Soft cream
-          300: "#ffe082", // Warm cream
-          400: "#ffd54f", // Vibrant cream
-          500: "#ffa726", // Rich cream
-          600: "#ff9800", // Deep cream
-          700: "#fb8c00", // Dark cream
-          800: "#f57c00", // Orange cream
-          900: "#ef6c00", // Burnt cream
-        },
-        accent: {
-          50: "#e8f5e9", // Very light mint
-          100: "#c8e6c9", // Light mint
-          200: "#a5d6a7", // Soft mint
-          300: "#81c784", // Fresh mint
-          400: "#66bb6a", // Vibrant mint
-          500: "#4caf50", // Rich mint
-          600: "#43a047", // Deep mint
-          700: "#388e3c", // Dark mint
-          800: "#2e7d32", // Forest mint
-          900: "#1b5e20", // Emerald mint
-        },
-        gradient: {
-          gold: "from-gold-400 to-gold-600",
-          cream: "from-cream-300 to-cream-500",
-          goldCream: "from-gold-400 to-cream-400",
-        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

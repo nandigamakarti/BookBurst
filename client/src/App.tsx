@@ -18,7 +18,6 @@ import { ProtectedRoute } from "./lib/protected-route";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 import CookieBanner from "@/components/ui/cookie-banner";
-import { ThemeProvider } from "@/components/ui/theme-provider";
 
 function Router() {
   return (
@@ -37,26 +36,24 @@ function Router() {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="bookburst-theme">
-      <QueryClientProvider client={queryClient}>
-        <AuthProvider>
-          <PreferencesProvider>
-            <TooltipProvider>
-              <div className="flex flex-col min-h-screen">
-                <Navbar />
-                <main className="flex-grow">
-                  <Router />
-                </main>
-                <Footer />
-                <CookieBanner />
-                <Toaster />
-                <ReadingTimeTracker />
-              </div>
-            </TooltipProvider>
-          </PreferencesProvider>
-        </AuthProvider>
-      </QueryClientProvider>
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <PreferencesProvider>
+          <TooltipProvider>
+            <div className="flex flex-col min-h-screen">
+              <Navbar />
+              <main className="flex-grow">
+                <Router />
+              </main>
+              <Footer />
+              <CookieBanner />
+              <Toaster />
+              <ReadingTimeTracker />
+            </div>
+          </TooltipProvider>
+        </PreferencesProvider>
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }
 

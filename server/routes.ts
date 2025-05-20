@@ -13,36 +13,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Add preferences routes
   app.use("/api/preferences", preferencesRouter);
 
-  // Routes for static pages
-  app.get("/", (req, res) => {
-    res.sendFile("/index.html", { root: "./dist" });
-  });
-
-  app.get("/auth/login", (req, res) => {
-    res.sendFile("/auth.html", { root: "./dist" });
-  });
-
-  app.get("/auth/register", (req, res) => {
-    res.sendFile("/auth.html", { root: "./dist" });
-  });
-
-  // Routes for authenticated pages
-  app.get("/bookshelf", (req, res) => {
-    if (!req.isAuthenticated()) {
-      res.redirect("/auth/login");
-      return;
-    }
-    res.sendFile("/bookshelf.html", { root: "./dist" });
-  });
-
-  app.get("/profile", (req, res) => {
-    if (!req.isAuthenticated()) {
-      res.redirect("/auth/login");
-      return;
-    }
-    res.sendFile("/profile.html", { root: "./dist" });
-  });
-
   // Books API
   app.get("/api/books", async (req, res) => {
     try {

@@ -4,75 +4,73 @@
 
 @layer base {
   :root {
-    --background: hsl(47 93% 97%); /* Light cream */
-    --foreground: hsl(47 85% 15%); /* Dark gold */
+    --background: 43 38% 97%;
+    --foreground: 222 47% 11%;
     
-    --card: hsl(47 93% 97%); /* Light cream */
-    --card-foreground: hsl(47 85% 15%); /* Dark gold */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
     
-    --popover: hsl(47 93% 97%); /* Light cream */
-    --popover-foreground: hsl(47 85% 15%); /* Dark gold */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
     
-    --primary: hsl(47 85% 15%); /* Dark gold */
-    --primary-foreground: hsl(47 93% 97%); /* Light cream */
+    --primary: 215 74% 23%;
+    --primary-foreground: 210 40% 98%;
     
-    --secondary: hsl(47 75% 85%); /* Soft cream */
-    --secondary-foreground: hsl(47 85% 15%); /* Dark gold */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
     
-    --muted: hsl(47 75% 85%); /* Soft cream */
-    --muted-foreground: hsl(47 65% 35%); /* Medium gold */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
     
-    --accent: hsl(47 75% 85%); /* Soft cream */
-    --accent-foreground: hsl(47 85% 15%); /* Dark gold */
+    --accent: 42 78% 52%;
+    --accent-foreground: 222 47% 11%;
     
-    --destructive: hsl(20 85% 65%); /* Orange */
-    --destructive-foreground: hsl(47 93% 97%); /* Light cream */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
     
-    --border: hsl(47 65% 35%); /* Medium gold */
-    --input: hsl(47 65% 35%); /* Medium gold */
-    --ring: hsl(47 85% 15%); /* Dark gold */
-    
-    --radius: 0.5rem;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 47% 11%;
     
     /* Charts */
-    --chart-1: hsl(47 85% 15%); /* Dark gold */
-    --chart-2: hsl(47 75% 85%); /* Soft cream */
-    --chart-3: hsl(47 65% 35%); /* Medium gold */
-    --chart-4: hsl(47 55% 55%); /* Light gold */
-    --chart-5: hsl(47 45% 75%); /* Cream */
+    --chart-1: 215 74% 23%;
+    --chart-2: 42 78% 52%;
+    --chart-3: 210 40% 65%;
+    --chart-4: 217 19% 27%;
+    --chart-5: 215 16% 47%;
     
     /* Sidebar */
-    --sidebar-background: hsl(47 85% 15%); /* Dark gold */
-    --sidebar-foreground: hsl(47 93% 97%); /* Light cream */
-    --sidebar-primary: hsl(47 75% 85%); /* Soft cream */
-    --sidebar-primary-foreground: hsl(47 85% 15%); /* Dark gold */
-    --sidebar-accent: hsl(47 65% 35%); /* Medium gold */
-    --sidebar-accent-foreground: hsl(47 85% 15%); /* Dark gold */
-    --sidebar-border: hsl(47 55% 55%); /* Light gold */
-    --sidebar-ring: hsl(47 93% 97%); /* Light cream */
+    --sidebar-background: 215 74% 23%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 42 78% 52%;
+    --sidebar-primary-foreground: 215 74% 23%;
+    --sidebar-accent: 214 32% 91%;
+    --sidebar-accent-foreground: 215 74% 23%;
+    --sidebar-border: 215 83% 19%;
+    --sidebar-ring: 0 0% 100%;
+    
+    --radius: 0.5rem;
   }
  
   .dark {
-    --background: 47 65% 35%; /* Medium gold */
-    --foreground: 47 93% 97%; /* Light cream */
+    --background: 217 19% 27%;
+    --foreground: 0 0% 98%;
     
-    --card: 47 65% 35%; /* Medium gold */
-    --card-foreground: 47 93% 97%; /* Light cream */
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 98%;
     
-    --popover: 47 65% 35%; /* Medium gold */
-    --popover-foreground: 47 93% 97%; /* Light cream */
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 98%;
     
-    --primary: 47 93% 97%; /* Light cream */
-    --primary-foreground: 47 65% 35%; /* Medium gold */
+    --primary: 215 74% 23%;
+    --primary-foreground: 0 0% 98%;
     
-    --secondary: 47 55% 55%; /* Light gold */
-    --secondary-foreground: 47 93% 97%; /* Light cream */
+    --secondary: 217 19% 27%;
+    --secondary-foreground: 0 0% 98%;
     
-    --muted: 47 55% 55%; /* Light gold */
-    --muted-foreground: 47 65% 35%; /* Medium gold */
+    --muted: 217 19% 27%;
+    --muted-foreground: 215 16% 65%;
     
-    --accent: 47 55% 55%; /* Light gold */
-    --accent-foreground: 47 93% 97%; /* Light cream */
     --accent: 42 78% 52%;
     --accent-foreground: 222 47% 11%;
     
@@ -87,11 +85,11 @@
 
 @layer base {
   * {
-    @apply border-gold-400;
+    @apply border-border;
   }
   
   body {
-    @apply bg-cream-50 text-gold-700;
+    @apply bg-background text-foreground;
   }
 
   h1, h2, h3, h4, h5, h6 {
